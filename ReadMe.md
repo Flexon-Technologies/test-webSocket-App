@@ -1,77 +1,70 @@
-# Simple ReactJS + Flask App using WebSockets (socket.io)
+# Getting Started with Create React App
 
-This simple App connects a Flask server to a React client
-and opens a two way interactive communication using WebSocket technology with the socket.io library.
-With WebSockets you can send messages to a server and receive event driven responses without having
-to poll a server.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This repo was created to help users create WebSocket communication protocols along with regular HTTP communication using a Python Flask server and a Javascript React client.
+## Available Scripts
 
-## Tech Stack
+In the project directory, you can run:
 
-**Client:** ReactJS,socket.io,socket.io-client
+### `npm start`
 
-**Server:** Python3,eventlet,Flask-Cors,Flask-SocketIO
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Installation
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Make sure you have installed Node.js, npm, Python3, and pip.
-After installation please follow the instructions below to download the repo.
+### `npm test`
 
-- Within the terminal window, create a folder in your local drive.
-- Navigate to the folder created.
-- Run the following command:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```bash
-  git clone https://github.com/adrianhuber17/webSocket-App.git
-```
+### `npm run build`
 
-- Navigate into the new sub-folder created called **WebSocket-App**.
-- Run the following commands to create an environment and install the dependencies:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```bash
-  python3 -m venv env
-  source env/bin/activate
-  pip install -r requirements.txt
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Navigate into the /**front-end** folder and run the following command:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-  npm i react-scripts
-```
+### `npm run eject`
 
-## Run Locally
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Open two terminal windows, one to be used by the Flask server and the other
-to be used by the React client.
-Make sure the server is initialized before the client to avoid any issues.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Terminal **window 1** - start the server:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```bash
-  cd webSocket-App
-  source env/bin/activate
-  python3 server.py
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Terminal **window 2** - start the client:
+## Learn More
 
-```bash
-  cd webSocket-App/front-end
-  npm start
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Demo
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-The browser on the left is Google Chrome and the Browser on the right is Firefox.
-The demo below displays in **red** a simple fetch to the server that executes on the rendering of the page using an http call.
-It also displays a chat communication between two users in the server using WebSocket communication. Notice that when a message is sent by one
-user, the other user receives the message without having to re-render the component or the page.
+### Code Splitting
 
-![](/applicationDemo.gif)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-You will notice in the code that I manually set Flask to run on PORT 5001 instead of the usual PORT 5000.
-This is because AirPlay in Apple is also running on PORT 5000 and it was making it difficult for Flask and React to connect
-using WebSockets.
-Another workaround is to turn off Airplay on the Mac by going to System Preferences > Sharing > uncheck AirPlay Receiver.
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
